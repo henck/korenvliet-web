@@ -88,5 +88,7 @@ study: Room 'Study'
 ;
 
 + Chair, Heavy 'wooden leather desk chair*chairs/furniture' 'desk chair'
-  "TODO: describe the desk chair. "
+  "A heavy wooden chair sits behind the desk, its seat and back covered in 
+  slightly cracked leather. It looks very comfortable, but it is also very 
+  heavy. "
 ;
