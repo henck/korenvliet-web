@@ -15,4 +15,5 @@ underLake: OutdoorRoom 'Lake (under water)'
   up = lake
   south = underBay
   cannotGoThatWayMsg = 'It\'s best not to venture too far underwater. '
+  roomImage = (goggles.isWorn ? 'underLake-goggles' : 'underLake')
 ;
