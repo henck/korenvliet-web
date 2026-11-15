@@ -58,9 +58,8 @@ study: Room 'Study'
 ;
 
 ++ goggles: Wearable 'swimming pair/goggles/glasses' 'pair of swimming goggles'
-  "A pair or rubber swimming goggles. These help to see underwater. Why uncle Wout would store them
+  "A pair of rubber swimming goggles. These help to see underwater. Why uncle Wout would store them
   in his grandfather clock is a mystery, but then he was always a distracted sort. "
-  isPlural = true
 ;
 
 + Surface, Heavy 'mahogany desk/table*desks/tables/furniture' 'desk'

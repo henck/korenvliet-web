@@ -11,8 +11,8 @@
 #include <en_us.h>
 
 barn: Room 'Abandoned barn'
-  "This is a rickety, abandoned farm. Its walls are made of wooden planks 
-  with are quite rotted in places and the floor is covered in dust. The 
+  "This is a rickety, abandoned barn. Its walls are made of wooden planks 
+  that are quite rotted in places and the floor is covered in dust. The 
   barn is empty apart from lots of cobwebs and an old wooden table. An exit leads out to the plateau. "
   south = plateau
   out asExit(south)
@@ -28,5 +28,5 @@ barn: Room 'Abandoned barn'
 ;
 
 + plateauExit: Enterable ->plateau 'plateau' 'plateau'
-  "The farm's old doors open onto the plateau outside. "
+  "The barn's old doors open onto the plateau outside. "
 ;

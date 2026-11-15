@@ -23,7 +23,7 @@ and there seems to be a vacant lot to the north.
 
 
 >x korenvliet
-Delapidated yet intimidating, it is clear that the village was built around the
+Dilapidated yet intimidating, it is clear that the village was built around the
 Korenvliet Estate.  Its sprawling grounds cover an area larger than the rest of
 the village combined.  In fact, the village grounds are likely owned by the
 estate... it could all be yours if only you could find uncle Wout's will.
@@ -225,7 +225,6 @@ Taken.
 
 
 >d
-(first opening the drain)
 You're too fat to squeeze into the drain.  Perhaps you could manage it if you
 lost some weight first.
 
@@ -238,7 +237,7 @@ flanked by a velvet armchair and a wooden rocker chair.  A crystal chandelier
 hangs from the vaulted ceiling.  In the corner there is a small drain in the
 floor.
 
-There is a panelled door to the south, a wooden door to the east and an open
+There is a panelled door to the north, a wooden door to the east and an open
 archway to the south.
 
 
@@ -273,7 +272,7 @@ near the village, he must not have gotten around to actually doing it.
 (Your score has just increased by one point.)
 
 >open clock
-Opening the grandfather clock reveals some pair of swimming goggles.
+Opening the grandfather clock reveals a pair of swimming goggles.
 
 
 >take goggles
@@ -310,7 +309,7 @@ conservatory.
 (first opening the south door)
 
 Hallway
-This short L-shaped hallways runs from a wooden door to the north to an open
+This short L-shaped hallway runs from a wooden door to the north to an open
 archway to the west.  There is also a small door set in the east wall.  A large
 portrait of uncle Wout dominates the south wall.
 
@@ -364,7 +363,7 @@ flanked by a velvet armchair and a wooden rocker chair.  A crystal chandelier
 hangs from the vaulted ceiling.  In the corner there is a small drain in the
 floor.
 
-There is a panelled door to the south, a wooden door to the east and an open
+There is a panelled door to the north, a wooden door to the east and an open
 archway to the south.
 
 
@@ -412,9 +411,9 @@ Taken.
 
 >e
 Edge of a landfill
-This is the edge of a large landfill.  The terrain drops sharpy to the east so
+This is the edge of a large landfill.  The terrain drops sharply to the east so
 that you cannot continue on in that direction.  A rocky path leads west.  A
-large wooden sign stuck in the ground here.
+large wooden sign is stuck in the ground here.
 
 
 >x sign
@@ -445,7 +444,7 @@ There is a hot-air balloon here.
 
 >n
 Abandoned barn
-This is a rickety, abandoned farm.  Its walls are made of wooden planks with
+This is a rickety, abandoned barn.  Its walls are made of wooden planks that
 are quite rotted in places and the floor is covered in dust.  The barn is empty
 apart from lots of cobwebs and an old wooden table.  An exit leads out to the
 plateau.
@@ -538,6 +537,8 @@ Lake
 You are in the middle of the lake.  The shore to the west is quite far away.
 To the south, the lake opens out into waters known as the South Bay.
 
+You see a rubber boat here.
+
 
 >dive
 You'll need to wear a snorkel in order to breathe under water.
@@ -550,6 +551,8 @@ fairly deep part of the lake and the water is cold here.  From here, you could
 go back north to the middle of the lake.
 
 A salmon is splashing around in the water here.
+
+You see a rubber boat here.
 
 
 >take salmon
@@ -622,11 +625,15 @@ This part of the lake is called the South Bay, famous for its fishing.  It's a
 fairly deep part of the lake and the water is cold here.  From here, you could
 go back north to the middle of the lake.
 
+You see a rubber boat here.
+
 
 >n
 Lake
 You are in the middle of the lake.  The shore to the west is quite far away.
 To the south, the lake opens out into waters known as the South Bay.
+
+You see a rubber boat here.
 
 
 >w
@@ -705,12 +712,16 @@ flanked by a velvet armchair and a wooden rocker chair.  A crystal chandelier
 hangs from the vaulted ceiling.  In the corner there is a small drain in the
 floor.
 
-There is a panelled door to the south, a wooden door to the east and an open
+There is a panelled door to the north, a wooden door to the east and an open
 archway to the south.
 
 
+>x drain
+This drain seems to lead into a sewer pipe.  A person could probably squeeze
+into it.  It’s open.
+
+
 >d
-(first opening the drain)
 With some effort, you squeeze yourself feet first into the drain.
 
 Sewer
@@ -720,7 +731,7 @@ pipe continues to the south.  There is a drain here, leading up.
 
 >s
 Curve in the sewer
-You are inside a round concrete sewer pipe.  It's s tight fit, and it's very
+You are inside a round concrete sewer pipe.  It's a tight fit, and it's very
 dark here.  The pipe curves from the north to the east.
 
 
@@ -749,7 +760,6 @@ continues upwards from here.  There is a drain here, leading west.
 
 
 >w
-(first opening the drain)
 With some effort, you squeeze yourself head first through the drain.
 
 East wine cellar
@@ -804,6 +814,11 @@ You are at the top of a dimly lit flight of stairs going down.  The brick walls
 here are cold and musty.  In the west wall is a small door.
 
 
+>e
+You can’t go that way.  Obvious exits lead west; and down, back to the west
+wine cellar.
+
+
 >unlock door
 Unlocked.
 
@@ -812,7 +827,7 @@ Unlocked.
 (first opening the cellar door)
 
 Hallway
-This short L-shaped hallways runs from a wooden door to the north to an open
+This short L-shaped hallway runs from a wooden door to the north to an open
 archway to the west.  There is also a small door set in the east wall.  A large
 portrait of uncle Wout with a wall safe behind it dominates the south wall.
 
@@ -847,7 +862,7 @@ Congratulations.
 
 *** YOU HAVE WON ***
 
-In 121 moves, you have scored 8 of a possible 8 points.
+In 123 moves, you have scored 8 of a possible 8 points.
 
 Would you like to RESTORE a saved position, RESTART the story, see your FULL
 SCORE, or QUIT?

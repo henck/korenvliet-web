@@ -13,7 +13,6 @@
 topOfStairs: Room 'Top of stairs'
   "You are at the top of a dimly lit flight of stairs going down. The brick walls here are cold and musty. 
   In the west wall is a small door. "
-  east = eastCellar
   down = stairsDown
   west = insideCellarDoor
 ;

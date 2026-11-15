@@ -13,8 +13,8 @@
 landfill: OutdoorRoom 'Edge of a landfill'
   desc() {
     "This is the edge of a large landfill. The terrain drops
-    sharpy to the east so that you cannot continue on in that direction. A rocky path
-    leads west. A large wooden sign stuck in the ground here. ";
+    sharply to the east so that you cannot continue on in that direction. A rocky path
+    leads west. A large wooden sign is stuck in the ground here. ";
     if(airship.location == landfill) {
       "\bThere is a hot-air balloon here. ";
     }

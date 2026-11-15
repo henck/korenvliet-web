@@ -23,7 +23,7 @@ conservatory: Room 'Conservatory'
     if(self.isOpen) {
       "You can see the study on the other side. ";
     } else {
-      "Though the glass, you can see the study on the other side. ";
+      "Through the glass, you can see the study on the other side. ";
     }
   }
 ;

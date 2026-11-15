@@ -15,6 +15,13 @@ shore: OutdoorRoom 'Lakeshore'
   You could follow the brook back to the west. "
   west = brook
   east = lakeEntrance
+  /* the rubber boat comes along from lake */
+  travelerArriving(traveler, origin, connector, backConnector) {
+    if(traveler == me && origin == lake && boat.location == lake) {
+      boat.moveInto(self);
+    }
+    inherited(traveler, origin, connector, backConnector);
+  }
 ;
 
 + Decoration 'bush*bushes' 'bushes'
@@ -36,7 +43,7 @@ shore: OutdoorRoom 'Lakeshore'
       }
     }
     action() {
-      boat.moveInto(me.location);
+      boat.moveInto(lake);
       inherited;
     }
   }
@@ -111,7 +118,7 @@ shore: OutdoorRoom 'Lakeshore'
     verify() {}
     action() {
       if(gDobj == boat) {
-        "The brook isn't very deep. The sharp shones on the bed would rip your boat to shreds. ";
+        "The brook isn't very deep. The sharp stones on the bed would rip your boat to shreds. ";
       } else {
         "If you put that in the brook, you'll lose it. ";
       }
@@ -121,7 +128,7 @@ shore: OutdoorRoom 'Lakeshore'
     verify() {}
     action() {
       if(gDobj == boat) {
-        "The brook isn't very deep. The sharp shones on the bed would rip your boat to shreds. ";
+        "The brook isn't very deep. The sharp stones on the bed would rip your boat to shreds. ";
       } else {
         "If you put that in the brook, you'll lose it. ";
       }

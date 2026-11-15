@@ -17,6 +17,7 @@
 DrainDown: Door
   vocabWords = 'small drain/manhole*drains/manholes'
   name = 'drain'
+  initiallyOpen = true
   desc = "This drain seems to lead into a sewer pipe. A person could probably squeeze into it. "
   canTravelerPass(traveler) {
     return !me.isFat;
@@ -36,7 +37,8 @@ DrainDown: Door
 DrainUp: Door 
   vocabWords = 'small drain/manhole*drains/manholes'
   name = 'drain'
-  desc = "The drain is a squareish opening that seems to lead out of the sewer pipe. A person could probably squeeze through it. "
+  initiallyOpen = true
+  desc = "The drain is a squarish opening that seems to lead out of the sewer pipe. A person could probably squeeze through it. "
   canTravelerPass(traveler) {
     return !me.isFat;
   }
@@ -73,7 +75,7 @@ sewerUnderStudy: Room 'Sewer'
 ;
 
 sewerLeftCurve: Room 'Curve in the sewer' 
-  "You are inside a round concrete sewer pipe. It's s tight fit, and it's very dark here. The pipe curves from the north to the east. "
+  "You are inside a round concrete sewer pipe. It's a tight fit, and it's very dark here. The pipe curves from the north to the east. "
   north = sewerUnderLiving
   east = sewerFork
 ;

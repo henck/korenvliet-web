@@ -28,7 +28,7 @@ forest: OutdoorRoom 'In a forest'
 ;
 
 + Distant 'patio*patios' 'patio'
-  "A flagstone patio is visible through the trees to the south. It's probably part of the Korenvliet estate. "
+  "A flagstone patio is visible through the trees to the east. It's probably part of the Korenvliet estate. "
 ;
 
 + Fixture 'tall tree/sapling*trees/saplings' 'trees'

@@ -21,11 +21,11 @@ brook: OutdoorRoom 'Small brook'
 ;
 
 + Distant 'flagstone patio*patios' 'patio'
-  "A flagstone patio, which must be part of the estate, can be seem through some trees to the north. "
+  "A flagstone patio, which must be part of the estate, can be seen through some trees to the north. "
 ;
 
 + Distant 'meadow' 'meadow'
-  "A vast meadow liest to the west. "
+  "A vast meadow lies to the west. "
 ;
 
 + Distant 'lake' 'lake'
@@ -73,7 +73,7 @@ brook: OutdoorRoom 'Small brook'
     verify() {}
     action() {
       if(gDobj == boat) {
-        "The brook isn't very deep. The sharp shones on the bed would rip your boat to shreds. ";
+        "The brook isn't very deep. The sharp stones on the bed would rip your boat to shreds. ";
       } else {
         "If you put that in the brook, you'll lose it. ";
       }
@@ -83,7 +83,7 @@ brook: OutdoorRoom 'Small brook'
     verify() {}
     action() {
       if(gDobj == boat) {
-        "The brook isn't very deep. The sharp shones on the bed would rip your boat to shreds. ";
+        "The brook isn't very deep. The sharp stones on the bed would rip your boat to shreds. ";
       } else {
         "If you put that in the brook, you'll lose it. ";
       }

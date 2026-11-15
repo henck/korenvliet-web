@@ -14,7 +14,7 @@ insideClinic: Room 'Inside Clinic'
   "Faded public notices line the walls of the single small room that comprises the local medical clinic. The walls
   are painted an obligatory institutional green. There is a single bed in a corner. There doesn't seem to be much 
   here in the way of medical supplies and instruments, since serious (or most) cases are sent to the district hospital 
-  in the next town. A glass door leads northeast out to the vilage main street. "
+  in the next town. A glass door leads northeast out to the village main street. "
   destName = 'the clinic'
   out = mainStreet
   northeast asExit(out) 
@@ -36,7 +36,7 @@ insideClinic: Room 'Inside Clinic'
     switch(noteIndex) {
       case 1: "There's a hand-printed note dated two years ago saying that all dental cases should be referred to the district hospital. Some bored patient has drawn a doodle in a corner. "; break;
       case 2: "One home-printed notice says 'SILENCE' in fat letters. "; break;
-      case 3: "A large poster exclaims, \"Excercise is GOOD for you.\" with a faded photo of happy joggers in a meadow. "; break;
+      case 3: "A large poster exclaims, \"Exercise is GOOD for you.\" with a faded photo of happy joggers in a meadow. "; break;
       default: "An uninviting photograph of a toddler's mouth suggests that brushing your teeth twice a day is good, while eating apples regularly is even better. "; break;
     }
     noteIndex++;

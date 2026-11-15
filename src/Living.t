@@ -15,7 +15,7 @@ living: Room 'Living Room'
   is in the center of the room with a settee before it, flanked by a velvet armchair and a wooden
   rocker chair. A crystal chandelier hangs from the vaulted ceiling. In the corner there is a small 
   drain in the floor.\b
-  There is a panelled door to the south, a wooden door to the east and an open archway to the south. "
+  There is a panelled door to the north, a wooden door to the east and an open archway to the south. "
   north = panelledDoorInside
   east = studyDoorOutside
   south = atrium

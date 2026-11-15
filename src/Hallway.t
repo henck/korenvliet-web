@@ -12,7 +12,7 @@
 
 hallway: Room 'Hallway'
   desc() { 
-    "This short L-shaped hallways runs from a wooden door to the north to an open archway to the west. There is also a small
+    "This short L-shaped hallway runs from a wooden door to the north to an open archway to the west. There is also a small
     door set in the east wall. A large portrait of uncle Wout ";
     if(safe.discovered) {
       "with a wall safe behind it ";
@@ -78,12 +78,12 @@ hallway: Room 'Hallway'
   hasBeenOpened = nil
   dobjFor(Unlock) {
     check() {
-      failCheck('There\'s a numbered dial on the safe. You\'ll need to set it to specific numbers in order to umlock the safe. ');
+      failCheck('There\'s a numbered dial on the safe. You\'ll need to set it to specific numbers in order to unlock the safe. ');
     }
   }
   dobjFor(Lock) {
     check() {
-      failCheck('There\'s realy no need to lock the safe again. ');
+      failCheck('There\'s really no need to lock the safe again. ');
     }
   }
 ;

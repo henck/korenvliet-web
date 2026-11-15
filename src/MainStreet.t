@@ -67,7 +67,7 @@ mainStreet: OutdoorRoom 'Main Street'
 ;
 
 + foyerEntrance: Fixture 'stately korenvliet/estate/villa/house/foyer' 'Korenvliet'
-  "Delapidated yet intimidating, it is clear that the village was built around the Korenvliet Estate. Its sprawling grounds cover
+  "Dilapidated yet intimidating, it is clear that the village was built around the Korenvliet Estate. Its sprawling grounds cover
   an area larger than the rest of the village combined. In fact, the village grounds are likely owned by the estate... it could
   all be yours if only you could find uncle Wout's will. "
   dobjFor(Enter) remapTo(Enter, frontDoorOutside)

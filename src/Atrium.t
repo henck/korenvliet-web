@@ -39,7 +39,7 @@ atrium: Room 'Atrium'
     if(self.isOpen) {
       "You can see a patio on the other side. ";
     } else {
-      "Though the glass, you can see a patio on the other side. ";
+      "Through the glass, you can see a patio on the other side. ";
     }
   }  
 ;

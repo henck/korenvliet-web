@@ -41,7 +41,7 @@ eastCellar: Room 'East wine cellar'
   isHim = true
   initSpecialDesc = "A panther is sitting on the floor here. "
   cannotKissActorMsg = 'Would you like to have your face shredded? I thought not. '
-  cannotEatMsg = 'Eating a live panther would be a new one for the Guiness Book of World Records. Maybe now it is not the time to attempt it. '
+  cannotEatMsg = 'Eating a live panther would be a new one for the Guinness Book of World Records. Maybe now it is not the time to attempt it. '
   uselessToAttackMsg = 'Would you like to have your face shredded? I thought not. '
   
   iobjFor(GiveTo) {

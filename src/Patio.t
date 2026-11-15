@@ -25,7 +25,7 @@ patio: OutdoorRoom 'Patio'
     if(self.isOpen) {
       "You can see Korenvliet's atrium on the other side. ";
     } else {
-      "Though the glass, you can see Korenvliet's atrium on the other side. ";
+      "Through the glass, you can see Korenvliet's atrium on the other side. ";
     }
   }  
 ;

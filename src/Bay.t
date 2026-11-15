@@ -17,6 +17,13 @@ bay: Floorless, OutdoorRoom 'South Bay'
   down: NoTravelMessage { "That would take you under water! You could dive if you think that's a good idea. " }
   cannotGoThatWayMsg = 'It\'s best not to venture any further on the lake; you might lose sight of the shore. '
   bottomRoom = underBay
+  /* the rubber boat comes along from lake */
+  travelerArriving(traveler, origin, connector, backConnector) {
+    if(traveler == me && origin == lake && boat.location == lake) {
+      boat.moveInto(self);
+    }
+    inherited(traveler, origin, connector, backConnector);
+  }
 ;
 
 + salmon: Thing 'salmon/fish' 'salmon'
