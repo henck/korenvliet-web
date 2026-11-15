@@ -1,0 +1,19 @@
+{
+  "name": "korenvliet-web",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Korenvliet, a text adventure in TADS 3, with pictures, playing in the browser on tads3js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "node tools/build.js",
+    "build:debug": "node tools/build.js --debug",
+    "serve": "node tools/serve.js",
+    "test": "node tools/test.js"
+  },
+  "dependencies": {
+    "tads3js": "file:../tads3js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

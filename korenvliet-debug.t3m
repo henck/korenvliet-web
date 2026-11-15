@@ -1,0 +1,46 @@
+-D LANGUAGE=en_us
+-D MESSAGESTYLE=neu
+-Fy objd -Fo objd
+-o obj/korenvliet-debug.t3
+-lib system
+-lib adv3/adv3
+-source src/Korenvliet
+-source src/Buyable
+-source src/MainStreet
+-source src/InsideSupermarket
+-source src/InsideClinic
+-source src/Forest
+-source src/Foyer
+-source src/Living
+-source src/Study
+-source src/Brook
+-source src/Conservatory
+-source src/Hallway
+-source src/Atrium
+-source src/Patio
+-source src/Shore
+-source src/Meadow
+-source src/Lot
+-source src/Path
+-source src/Landfill
+-source src/Build
+-source src/Fly
+-source src/Plateau
+-source src/Barn
+-source src/Inflate
+-source src/Lake
+-source src/Bay
+-source src/UnderLake
+-source src/UnderBay
+-source src/UndergroundStream
+-source src/Cave
+-source src/Sewer
+-source src/Jog
+-source src/EastCellar
+-source src/WestCellar
+-source src/TopOfStairs
+-source src/Dive
+-source src/ui
+-source src/debug
+-res
+GameInfo.txt
