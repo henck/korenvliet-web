@@ -1,0 +1,855 @@
+KORENVLIET
+A short adventure by Alexander van Oostenrijk @ Independent Software
+(www.independent-software.com), based on the original korenvl.bas (author
+unknown).
+Copyright 2016.
+First-time players should type "about".
+Version 1.2
+
+You were recently informed that your eccentric uncle Wout had passed away.
+There is a persistent rumor that the old crackpot left the Korenvliet estate to
+whomever manages to locate his will - even you, his least favorite nephew.
+
+
+Today, you've dutifully travelled down to the village where the estate is
+located to start your search of the grounds.
+
+Main Street
+This is the cobbled main street of the village which has grown around the
+sprawling estate over time.  The impressive front door of the stately villa of
+Korenvliet is to the east, while there is a small supermarket to the west and a
+village clinic to the southwest.  A narrow path leads to a forest to the south,
+and there seems to be a vacant lot to the north.
+
+
+>x korenvliet
+Delapidated yet intimidating, it is clear that the village was built around the
+Korenvliet Estate.  Its sprawling grounds cover an area larger than the rest of
+the village combined.  In fact, the village grounds are likely owned by the
+estate... it could all be yours if only you could find uncle Wout's will.
+
+
+>e
+(first opening the front door)
+
+Foyer
+Korenvliet's foyer is large and imposing.  Its walls are panelled in the finest
+wood, and the floor is a rich mahogany parquet.  There is an occasional table
+by the door.  A heavy front door leads west to the main street, while a
+panelled door leading further into the villa stands closed to the south.
+
+A folded letter lies on the occasional table.
+
+A large wicker basket sits in a corner.
+
+
+>take letter
+Taken.
+
+
+>read letter
+The letter is directed to a local construction company.  Uncle Wout is
+complaining about a landfill having cut off access a barn belonging to the
+Korenvliet estate.  It seems uncle Wout never got around to posting it.
+
+
+>take basket
+Taken.
+
+
+>w
+Main Street
+This is the cobbled main street of the village which has grown around the
+sprawling estate over time.  The impressive front door of the stately villa of
+Korenvliet is to the east, while there is a small supermarket to the west and a
+village clinic to the southwest.  A narrow path leads to a forest to the south,
+and there seems to be a vacant lot to the north.
+
+
+>w
+You cannot go into the supermarket with all the things you are carrying.
+
+
+>drop letter
+Dropped.
+
+
+>drop basket
+Dropped.
+
+
+>w
+Inside Supermarket
+Though proudly labelled 'supermarket', this is really only a small self-service
+convenience store.  The few aisles are loaded with canned foods and cleaning
+products.
+
+A pair of sneakers sits on a shelf near the cash register.
+
+A small outdoorsman's axe hangs on the wall in the tools section, which is
+otherwise empty.
+
+A clerk hovers behind a cash register near the exit to the east.
+
+
+>x clerk
+The clerk's a spotty youth slumped behind her cash register.  Clearly she'd
+rather be doing something else.
+
+
+>take axe
+That would be stealing, you know.
+
+
+>buy axe
+The clerk rings up your purchase on the cash register.  You pay her and take
+the axe.
+
+(Your score has just increased by one point.)
+
+(If you’d prefer not to be notified about score changes in the future, type
+NOTIFY OFF.)
+
+>buy sneakers
+The clerk rings up your purchase on the cash register.  You pay her and take
+the pair of sneakers.
+
+(Your score has just increased by one point.)
+
+>e
+Main Street
+This is the cobbled main street of the village which has grown around the
+sprawling estate over time.  The impressive front door of the stately villa of
+Korenvliet is to the east, while there is a small supermarket to the west and a
+village clinic to the southwest.  A narrow path leads to a forest to the south,
+and there seems to be a vacant lot to the north.
+
+You see a letter and a basket here.
+
+
+>take basket
+Taken.
+
+
+>take letter
+Taken.
+
+
+>s
+In a forest
+You find yourself among trees of all sizes in a small forest to the south of
+the village main street.  To the east you can glimpse a small patio, and to the
+south the forest thins and turns into a meadow.
+
+
+>climb trees
+The trees that are strong enough to climb also have rather slippery trunks.
+Climbing one may be dangerous.
+
+
+>cut trees with axe
+Using your axe, you chop off some branches from a nearby tree.  The dead wood
+falls to the ground with a whump.
+
+
+>take wood
+Taken.
+
+
+>s
+Meadow
+You are in a vast, grassy meadow sprinkled with daisies.  To the north are the
+trees of a small forest, while you can hear the gurgling of water from the
+east.
+
+A weather balloon seems to have crashed here.
+
+
+>x balloon
+It's a somewhat large grey balloon made from some lightweight material.  Likely
+it's a crashed weather balloon.
+
+
+>jog
+You'll need to wear some running shoes in order to jog.
+
+
+>take balloon
+Taken.
+
+
+>n
+In a forest
+You find yourself among trees of all sizes in a small forest to the south of
+the village main street.  To the east you can glimpse a small patio, and to the
+south the forest thins and turns into a meadow.
+
+
+>e
+Patio
+This is a small flagstone patio outside the Korenvliet villa proper.  To the
+north is the villa wall, with a glass door set into it.  You can see a small
+forest to the west, and you hear the sound of gurgling water from the south.
+
+You see a rubber boat and a wood stove here.
+
+
+>take stove
+Taken.
+
+
+>take boat
+Taken.
+
+
+>x boat
+An inflatable yellow rubber boat.  It is currently not inflated so that you can
+easily carry it.
+
+
+>n
+(first opening the glass door)
+
+Atrium
+Korenvliet's atrium is an extension of the living room, with some large
+skylights to let in as much natural light as possible.  Open archways lead
+north, to a living room, and east to a hallway.  There is also a glass door
+leading south, to a patio.  A small drain is in the floor in the corner of the
+room.
+
+A coil of rope lies on the floor.
+
+
+>take rope
+Taken.
+
+
+>d
+(first opening the drain)
+You're too fat to squeeze into the drain.  Perhaps you could manage it if you
+lost some weight first.
+
+
+>n
+Living Room
+Korenvliet's large and comfortable living room is richly decorated.  A
+patterned oriental rug is in the center of the room with a settee before it,
+flanked by a velvet armchair and a wooden rocker chair.  A crystal chandelier
+hangs from the vaulted ceiling.  In the corner there is a small drain in the
+floor.
+
+There is a panelled door to the south, a wooden door to the east and an open
+archway to the south.
+
+
+>e
+(first opening the wooden door)
+
+Study
+This is a well-appointed study.  A large mahogany desk sits in the center of
+the room, and a grandfather clock stands against the north wall.  A small drain
+is in the floor in the corner of the room.
+
+Wooden doors lead west and south, and a glass door leads east to a
+conservatory.
+
+
+>open drawer
+Opening the drawer reveals a leather-bound book.
+
+
+>take book
+Taken.
+
+
+>read book
+You glean from the book that amateur hot air balloon construction requires a
+balloon, a stove with some fuel, a gondola and some cable or rope.  It also
+states that one should build that balloon in "a suitable spot".  Well, that
+would be an interesting if risky project.  It's amazing what old Wout got up to
+in his old age.  Since there has been no news of hot air balloon experiments
+near the village, he must not have gotten around to actually doing it.
+
+(Your score has just increased by one point.)
+
+>open clock
+Opening the grandfather clock reveals some pair of swimming goggles.
+
+
+>take goggles
+Taken.
+
+
+>e
+(first opening the glass door)
+
+Conservatory
+Through its plate glass windows, Korenvliet's conservatory offers a wide view
+of the gardens outside.  The windows stretch from floor level to ceiling height
+and are set in a wrought iron framework, which in turn is built against the
+brick wall of the villa.  A glass door leads west to the study.
+
+A matchbook lies discarded on a windowsill.
+
+
+>take matchbook
+Taken.
+
+
+>w
+Study
+This is a well-appointed study.  A large mahogany desk sits in the center of
+the room, and a grandfather clock stands against the north wall.  A small drain
+is in the floor in the corner of the room.
+
+Wooden doors lead west and south, and a glass door leads east to a
+conservatory.
+
+
+>s
+(first opening the south door)
+
+Hallway
+This short L-shaped hallways runs from a wooden door to the north to an open
+archway to the west.  There is also a small door set in the east wall.  A large
+portrait of uncle Wout dominates the south wall.
+
+You see a leather satchel here.
+
+
+>look behind portrait
+You find a wall safe behind the portrait.
+
+(Your score has just increased by one point.)
+
+>x safe
+It's a combination wall safe.  There is a single dial on it.  There's also a
+small label on the safe.  It’s closed.  It’s currently locked.
+
+
+>x label
+The label is glued to the safe door.  There are some doodles on it that look
+like a bottle, a goblet and finally something unrecognizable.  It might be a
+table, a desk, or a box.
+
+
+>take satchel
+Taken.
+
+
+>open satchel
+Opening the leather satchel reveals a snorkel.
+
+
+>e
+(first trying to open the small door)
+The small door seems to be locked.
+
+
+>n
+Study
+This is a well-appointed study.  A large mahogany desk sits in the center of
+the room, and a grandfather clock stands against the north wall.  A small drain
+is in the floor in the corner of the room.
+
+Wooden doors lead west and south, and a glass door leads east to a
+conservatory.
+
+
+>w
+Living Room
+Korenvliet's large and comfortable living room is richly decorated.  A
+patterned oriental rug is in the center of the room with a settee before it,
+flanked by a velvet armchair and a wooden rocker chair.  A crystal chandelier
+hangs from the vaulted ceiling.  In the corner there is a small drain in the
+floor.
+
+There is a panelled door to the south, a wooden door to the east and an open
+archway to the south.
+
+
+>n
+(first opening the panelled door)
+
+Foyer
+Korenvliet's foyer is large and imposing.  Its walls are panelled in the finest
+wood, and the floor is a rich mahogany parquet.  There is an occasional table
+by the door.  A heavy front door leads west to the main street, while a
+panelled door leading further into the villa stands open to the south.
+
+
+>w
+Main Street
+This is the cobbled main street of the village which has grown around the
+sprawling estate over time.  The impressive front door of the stately villa of
+Korenvliet is to the east, while there is a small supermarket to the west and a
+village clinic to the southwest.  A narrow path leads to a forest to the south,
+and there seems to be a vacant lot to the north.
+
+
+>n
+Vacant lot
+This is a vacant lot filled with rubble.  It seems the municipality was going
+to build something here, but never got round to it.  Of course, there's not too
+much going on in this village, which exists by the graces of the vast
+Korenvliet estate.
+
+You can see the main street to the south, while a rocky path leads off to the
+east.
+
+
+>e
+Rocky path
+You are walking down a rocky path that leads from a vacant lot to the west to
+the edge of a landfill to the east.
+
+A fishing net lies discarded along that path.
+
+
+>take net
+Taken.
+
+
+>e
+Edge of a landfill
+This is the edge of a large landfill.  The terrain drops sharpy to the east so
+that you cannot continue on in that direction.  A rocky path leads west.  A
+large wooden sign stuck in the ground here.
+
+
+>x sign
+The text on the sign is mostly faded; it was probably some information about
+the construction project going on here.  However, someone has scrawled some
+graffiti on the sign: "A suitable spot."
+
+
+>build balloon
+Using the items you have collected, you set to work on building a hot-air
+balloon.  The book you've read provides guidance and while it takes some hours
+of work, in the end you get it done.  It will fly.
+
+
+>fly balloon
+Amazingly, your contraption works.  By regulating the heat of the burning wood
+stove, you manage to lift off the balloon and soar off into the skies.  With
+careful maneuvering, you set it down on the plateau in the middle of the
+landfill.
+
+Plateau
+This is a raised plateau in the middle of the landfill.  For some reason, this
+small elevation was spared while everything else was dug up.  The ground drops
+quite sharply around the edges.  There is an old barn to the north.
+
+There is a hot-air balloon here.
+
+
+>n
+Abandoned barn
+This is a rickety, abandoned farm.  Its walls are made of wooden planks with
+are quite rotted in places and the floor is covered in dust.  The barn is empty
+apart from lots of cobwebs and an old wooden table.  An exit leads out to the
+plateau.
+
+
+>x table
+The wooden table is old and worn.  Someone has scratched the number "19" into
+its surface.
+
+
+>s
+Plateau
+This is a raised plateau in the middle of the landfill.  For some reason, this
+small elevation was spared while everything else was dug up.  The ground drops
+quite sharply around the edges.  There is an old barn to the north.
+
+There is a hot-air balloon here.
+
+
+>fly balloon
+You get in your hot-air balloon and fly it back to the edge of the landfill.
+
+Edge of a landfill
+
+
+>w
+Rocky path
+You are walking down a rocky path that leads from a vacant lot to the west to
+the edge of a landfill to the east.
+
+
+>w
+Vacant lot
+This is a vacant lot filled with rubble.  It seems the municipality was going
+to build something here, but never got round to it.  Of course, there's not too
+much going on in this village, which exists by the graces of the vast
+Korenvliet estate.
+
+You can see the main street to the south, while a rocky path leads off to the
+east.
+
+
+>s
+Main Street
+This is the cobbled main street of the village which has grown around the
+sprawling estate over time.  The impressive front door of the stately villa of
+Korenvliet is to the east, while there is a small supermarket to the west and a
+village clinic to the southwest.  A narrow path leads to a forest to the south,
+and there seems to be a vacant lot to the north.
+
+
+>s
+In a forest
+You find yourself among trees of all sizes in a small forest to the south of
+the village main street.  To the east you can glimpse a small patio, and to the
+south the forest thins and turns into a meadow.
+
+
+>e
+Patio
+This is a small flagstone patio outside the Korenvliet villa proper.  To the
+north is the villa wall, with a glass door set into it.  You can see a small
+forest to the west, and you hear the sound of gurgling water from the south.
+
+
+>s
+Small brook
+The grounds of the Korenvliet estate end here at a small brook with slippery
+banks, which blocks further passage to the south.  You could follow the brook
+to the east where it flows into a lake.  Through some trees to the north you
+can glimpse a flagstone patio, and there is a vast meadow to the west.
+
+
+>e
+Lakeshore
+The small brook ends here and flows into a large lake.  Thick bushes block
+passage along the shore.  You could follow the brook back to the west.
+
+
+>e
+Your rubber boat needs to be inflated first.
+
+
+>inflate boat
+You inflate the boat.  Now you're out of breath.
+
+
+>e
+Lake
+You are in the middle of the lake.  The shore to the west is quite far away.
+To the south, the lake opens out into waters known as the South Bay.
+
+
+>dive
+You'll need to wear a snorkel in order to breathe under water.
+
+
+>s
+South Bay
+This part of the lake is called the South Bay, famous for its fishing.  It's a
+fairly deep part of the lake and the water is cold here.  From here, you could
+go back north to the middle of the lake.
+
+A salmon is splashing around in the water here.
+
+
+>take salmon
+Taken.
+
+(Your score has just increased by one point.)
+
+>take snorkel
+Taken.
+
+
+>wear snorkel
+Okay, you’re now wearing the snorkel.
+
+
+>wear goggles
+Okay, you’re now wearing the pair of swimming goggles.
+
+
+>dive
+You dive underwater.
+
+South Bay (under water)
+You are swimming underwater somewhere in the South Bay.  The water is very
+cold.  The lake floor throws up clouds of mud as you pass by.  It seems
+possible to swim north from here.  You also spot what looks like a tunnel in
+the lake floor to the west.
+
+
+>w
+Underground stream
+You are swimming in an underground stream.  This rocky passage is rather tight
+and it's extremely dark here.  The stream continues to the east and west.
+
+
+>w
+Underground Cave
+You are swimming in a small underground cave, filled completely with water.
+It's extremely dark here.  An underground stream leads east.
+
+An empty bottle is lying on the cave floor.
+
+
+>take bottle
+Taken.
+
+
+>x bottle
+This looks like a discarded bottle of Chablis.  There is a small note in it
+that says "97".
+
+
+>e
+Underground stream
+You are swimming in an underground stream.  This rocky passage is rather tight
+and it's extremely dark here.  The stream continues to the east and west.
+
+
+>e
+South Bay (under water)
+You are swimming underwater somewhere in the South Bay.  The water is very
+cold.  The lake floor throws up clouds of mud as you pass by.  It seems
+possible to swim north from here.  You also spot what looks like a tunnel in
+the lake floor to the west.
+
+
+>u
+South Bay
+This part of the lake is called the South Bay, famous for its fishing.  It's a
+fairly deep part of the lake and the water is cold here.  From here, you could
+go back north to the middle of the lake.
+
+
+>n
+Lake
+You are in the middle of the lake.  The shore to the west is quite far away.
+To the south, the lake opens out into waters known as the South Bay.
+
+
+>w
+Lakeshore
+The small brook ends here and flows into a large lake.  Thick bushes block
+passage along the shore.  You could follow the brook back to the west.
+
+You see a rubber boat here.
+
+
+>w
+Small brook
+The grounds of the Korenvliet estate end here at a small brook with slippery
+banks, which blocks further passage to the south.  You could follow the brook
+to the east where it flows into a lake.  Through some trees to the north you
+can glimpse a flagstone patio, and there is a vast meadow to the west.
+
+
+>w
+Meadow
+You are in a vast, grassy meadow sprinkled with daisies.  To the north are the
+trees of a small forest, while you can hear the gurgling of water from the
+east.
+
+
+>jog
+You'll need to wear some running shoes in order to jog.
+
+
+>wear sneakers
+Okay, you’re now wearing the pair of sneakers.
+
+
+>jog
+You give yourself a strenuous workout by running some laps around the meadow.
+
+You are now sweating like a race-horse, but it looks like you've lost a few
+pounds!
+
+(Your score has just increased by one point.)
+
+>score
+In 96 moves, you have scored 6 of a possible 8 points.
+
+
+(To see a detailed accounting of your score, type FULL SCORE.)
+
+>n
+In a forest
+You find yourself among trees of all sizes in a small forest to the south of
+the village main street.  To the east you can glimpse a small patio, and to the
+south the forest thins and turns into a meadow.
+
+
+>e
+Patio
+This is a small flagstone patio outside the Korenvliet villa proper.  To the
+north is the villa wall, with a glass door set into it.  You can see a small
+forest to the west, and you hear the sound of gurgling water from the south.
+
+
+>n
+Atrium
+Korenvliet's atrium is an extension of the living room, with some large
+skylights to let in as much natural light as possible.  Open archways lead
+north, to a living room, and east to a hallway.  There is also a glass door
+leading south, to a patio.  A small drain is in the floor in the corner of the
+room.
+
+
+>n
+Living Room
+Korenvliet's large and comfortable living room is richly decorated.  A
+patterned oriental rug is in the center of the room with a settee before it,
+flanked by a velvet armchair and a wooden rocker chair.  A crystal chandelier
+hangs from the vaulted ceiling.  In the corner there is a small drain in the
+floor.
+
+There is a panelled door to the south, a wooden door to the east and an open
+archway to the south.
+
+
+>d
+(first opening the drain)
+With some effort, you squeeze yourself feet first into the drain.
+
+Sewer
+You are inside the north end of a dimly lit, round concrete sewer pipe.  The
+pipe continues to the south.  There is a drain here, leading up.
+
+
+>s
+Curve in the sewer
+You are inside a round concrete sewer pipe.  It's s tight fit, and it's very
+dark here.  The pipe curves from the north to the east.
+
+
+>e
+Fork in the sewer
+You are inside a round concrete sewer pipe.  It's a tight fit, and it's very
+dark here.  The pipe forks here, leading off to the north, south and west.
+
+
+>s
+Curve in the sewer
+You are inside a round concrete sewer pipe.  It's a tight fit, and it's very
+dark here.  The pipe curves from the north to the west.
+
+
+>w
+Sewer
+You are inside a dimly lit, round concrete sewer pipe.  The pipe continues to
+the east as well as downwards.  There is a drain here, leading up.
+
+
+>d
+Sewer
+You are at the end of a dimly lit, round concrete sewer pipe.  The pipe
+continues upwards from here.  There is a drain here, leading west.
+
+
+>w
+(first opening the drain)
+With some effort, you squeeze yourself head first through the drain.
+
+East wine cellar
+Korenvliet's wine cellar is large and musty.  Arched pillars supporting the
+brick ceiling of the room stretch off into the gloom to the west.  There is a
+case of chablis in the corner.  A small drain is set at floor level in the east
+wall.
+
+A panther is sitting on the floor here.
+
+
+>x panther
+Panthers aren't common in this part of the world, so you suspect that it must
+have been imported from the far east.  Apparently uncle Wout felt his wine
+cellar had to be guarded by an actual panther.
+
+That panther seems hungry.  Perhaps it's been stuck in the cellar for a long
+time.
+
+
+>w
+The panther won't let you.  It growls at you threateningly.
+
+
+>give salmon to panther
+The panther snatches the salmon from your hand and disappears into the gloom.
+
+(Your score has just increased by one point.)
+
+>w
+West wine cellar
+Korenvliet's wine cellar is large and musty.  Arched pillars supporting the
+brick ceiling of the room stretch off into the gloom to the east.  A flight of
+stairs leads up.
+
+In the dim light, you see the sparkle of a crystal goblet sitting in a corner.
+
+
+>take goblet
+Taken.
+
+
+>x goblet
+It's a beautiful crystal goblet which must be quite valuable.  Even more
+interestingly, there's a sticker glued to it on which the number "64" is
+written.
+
+
+>u
+Top of stairs
+You are at the top of a dimly lit flight of stairs going down.  The brick walls
+here are cold and musty.  In the west wall is a small door.
+
+
+>unlock door
+Unlocked.
+
+
+>w
+(first opening the cellar door)
+
+Hallway
+This short L-shaped hallways runs from a wooden door to the north to an open
+archway to the west.  There is also a small door set in the east wall.  A large
+portrait of uncle Wout with a wall safe behind it dominates the south wall.
+
+
+>turn dial to 97
+Okay, the dial is now set to 97.
+
+
+>turn dial to 64
+Okay, the dial is now set to 64.
+
+
+>turn dial to 19
+As you turn the dial to 19, a quiet click comes from the wall safe.
+
+(Your score has just increased by one point.)
+
+>open safe
+Opening the wall safe reveals a will.
+
+
+>read will
+You read the document.  This is what it says:
+
+*** LAST WILL AND TESTAMENT ***
+
+I, Wout van Duysz ter Ghasth, in good health and with all my faculties, leave
+all my possessions, including the Korenvliet estate, to whomever succeeds in
+opening this safe.
+
+Congratulations.
+
+*** YOU HAVE WON ***
+
+In 121 moves, you have scored 8 of a possible 8 points.
+
+Would you like to RESTORE a saved position, RESTART the story, see your FULL
+SCORE, or QUIT?
+
+>quit
