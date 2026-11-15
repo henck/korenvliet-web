@@ -22,6 +22,7 @@ hallway: Room 'Hallway'
   north = hallwayDoorInside
   west = atrium
   east = outsideCellarDoor
+  roomImage = (safe.discovered ? 'hallway-safe' : 'hallway')
 ;
 
 + outsideCellarDoor: LockableWithKey, Door ->insideCellarDoor 'small cellar door*doors' 'small door'
