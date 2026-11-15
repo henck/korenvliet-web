@@ -30,4 +30,5 @@ underBay: OutdoorRoom 'South Bay (under water)'
     }
   }
   cannotGoThatWayMsg = 'It\'s best not to venture too far underwater. '
+  roomImage = (goggles.isWorn ? 'underBay-goggles' : 'underBay')
 ;
