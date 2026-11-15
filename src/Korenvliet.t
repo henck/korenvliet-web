@@ -15,7 +15,7 @@ versionInfo: GameID
   name = 'Korenvliet'
   byline = 'by Independent Software (www.independent-software.com)'
   htmlByline = 'by <a href="mailto:info@independent-software.com">Independent Software</a>'
-  version = '1.2'
+  version = '1.3'
   authorEmail = 'Independent Software <info@independent-software.com>'
   desc = '"You were recently informed that your eccentric uncle Wout had passed away. 
     There is a persistent rumor that the old crackpot left the Korenvliet estate

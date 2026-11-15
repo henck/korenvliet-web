@@ -13,7 +13,7 @@ async function main() {
   const ui = new ModernUI(root, {
     title: 'Korenvliet',
     byline: 'by Alexander van Oostenrijk',
-    version: '1.2',
+    version: '1.3',
   }, pictures);
   try {
     await ui.start(await GameClient.fetchImage('korenvliet.t3'), 'Korenvliet');
