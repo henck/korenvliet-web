@@ -87,3 +87,6 @@ study: Room 'Study'
   }
 ;
 
++ Chair, Heavy 'wooden leather desk chair*chairs/furniture' 'desk chair'
+  "TODO: describe the desk chair. "
+;
