@@ -1,0 +1,16 @@
+# Korenvliet on an Apache web server
+
+# The page when no file is given (https://example.com/)
+DirectoryIndex index.html
+
+# File types Apache may not know: the game image and the pictures
+AddType application/octet-stream .t3
+AddType image/webp .webp
+
+# Cross-origin isolation: the game then runs in a background worker, which
+# keeps the page responsive (without it, it runs on the page and still works).
+# Safe here: the page loads nothing from other sites.
+<IfModule mod_headers.c>
+  Header set Cross-Origin-Opener-Policy "same-origin"
+  Header set Cross-Origin-Embedder-Policy "require-corp"
+</IfModule>

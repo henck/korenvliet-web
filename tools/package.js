@@ -16,7 +16,8 @@ if(!process.argv.includes('--no-build'))
   execFileSync(process.execPath, [path.join(__dirname, 'build.js')], { cwd: root, stdio: 'inherit' });
 
 // The files: the page, its script and style, the VM's worker, the game, the pictures.
-const files = ['index.html', 'modern.css', 'korenvliet.js', 'tads3js-worker.js', 'korenvliet.t3', 'images.json'];
+// (.htaccess: settings for Apache servers; other servers ignore it.)
+const files = ['index.html', '.htaccess', 'modern.css', 'korenvliet.js', 'tads3js-worker.js', 'korenvliet.t3', 'images.json'];
 for(const file of fs.readdirSync(path.join(web, 'images')).sort())
   if(!file.startsWith('.')) files.push('images/' + file);
 
