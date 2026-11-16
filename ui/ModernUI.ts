@@ -344,8 +344,10 @@ export class ModernUI {
       picture.appendChild(img);
       requestAnimationFrame(() => {
         img.classList.add('shown');
-        // (No transition, e.g. with reduced motion: no transitionend either.)
-        if(!parseFloat(getComputedStyle(img).transitionDuration)) dropOld();
+        // (No transitionend without a transition, e.g. with reduced motion, nor
+        // while the picture isn't displayed: then after the fade's time.)
+        const fade = parseFloat(getComputedStyle(img).transitionDuration) || 0;
+        setTimeout(dropOld, fade * 1000 + 100);
       });
     };
     img.src = src;

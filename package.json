@@ -8,6 +8,7 @@
     "build": "node tools/build.js",
     "build:debug": "node tools/build.js --debug",
     "serve": "node tools/serve.js",
+    "package": "node tools/package.js",
     "test": "node tools/test.js"
   },
   "dependencies": {

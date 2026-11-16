@@ -51,7 +51,10 @@ roomImage = nil         // no picture
 
 ## Publishing
 
-Copy `web/` to any static web host. With cross-origin isolation headers
+`node tools/package.js` (or `npm run package`) builds the release version and
+zips what the server needs into `dist/korenvliet-<version>.zip` (no source maps,
+no debug build); unzip it into the site's folder. Or copy `web/` to any static
+web host. With cross-origin isolation headers
 (COOP/COEP) the game runs in a Web Worker, otherwise on the page itself
 (which works anywhere, including itch.io). Saved games are kept in the
 browser (IndexedDB) and can be downloaded and loaded from files.
