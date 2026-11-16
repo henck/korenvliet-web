@@ -31,6 +31,8 @@ const HELP_HTML = `
       <kbd>in</kbd>, <kbd>out</kbd> &ndash; go somewhere</li>
     <li><kbd>score</kbd>, <kbd>about</kbd>, <kbd>credits</kbd></li>
     <li><kbd>wait</kbd> (<kbd>z</kbd>), <kbd>undo</kbd>, <kbd>again</kbd> (<kbd>g</kbd>)</li>
+    <li><kbd>pictures off</kbd>, <kbd>pictures on</kbd> &ndash; hide or show the pictures
+      (<kbd>picture</kbd>, <kbd>image</kbd> and <kbd>illustration</kbd> work too)</li>
   </ul>
   <p>The up and down arrow keys bring back earlier commands. Your games are saved in this
   browser; you can also download a copy, and load it again later.</p>`;
@@ -58,7 +60,9 @@ export class ModernUI {
   private typedAhead: string[] = [];
   /** The echo of the last command (scrolled to the top of the story when its response comes). */
   private lastEcho: HTMLElement | null = null;
+  /** The picture shown, and the one the game asks for (shown when pictures are on). */
   private image = '';
+  private gameImage = '';
   private touch = matchMedia('(pointer: coarse)').matches;
 
   /**
@@ -81,7 +85,10 @@ export class ModernUI {
         this.logEl.innerHTML = '';
       },
       tag: (name, attrs) => {
-        if(name == 'x-ui' && attrs.image !== undefined) this.showImage(this.pictureURL(attrs.image, attrs.room || ''));
+        if(name == 'x-ui' && attrs.image !== undefined) {
+          this.gameImage = this.pictureURL(attrs.image, attrs.room || '');
+          this.showImage(this.picturesOn() ? this.gameImage : '');
+        }
       },
       inputLine: () => this.readyForCommand(),
       inputKey: () => this.waitForKey('Press any key to continue'),
@@ -283,6 +290,10 @@ export class ModernUI {
     return parseInt(this.setting('textSize', '0')) || 0;
   }
 
+  private picturesOn(): boolean {
+    return this.setting('pictures', 'on') != 'off';
+  }
+
   private applySettings() {
     let theme = this.setting('theme', 'paper') as Theme;
     if(!['paper', 'light', 'dark'].includes(theme)) theme = 'paper';
@@ -291,6 +302,7 @@ export class ModernUI {
     this.menuEl.querySelectorAll('[data-theme]').forEach((b) =>
       b.setAttribute('aria-pressed', String((b as HTMLElement).dataset.theme == theme)));
     document.documentElement.style.setProperty('--text-step', String(this.textSize()));
+    this.showImage(this.picturesOn() ? this.gameImage : '');
   }
 
   // ---------------------------------------------------------------------------
@@ -307,12 +319,13 @@ export class ModernUI {
     if(src == this.image) return;
     this.image = src;
     const picture = this.sceneEl.querySelector('.picture') as HTMLElement;
+    // (Without a picture, the story takes the whole width.)
+    this.sceneEl.hidden = !src;
+    this.root.querySelector('.app')!.classList.toggle('no-scene', !src);
     if(!src) {
-      this.sceneEl.hidden = true;
       picture.innerHTML = '';
       return;
     }
-    this.sceneEl.hidden = false;
     const img = new Image();
     img.alt = '';
     img.decoding = 'async';
@@ -404,8 +417,34 @@ export class ModernUI {
     this.lastEcho = echo;
     if(line.trim() && this.history[this.history.length - 1] !== line) this.history.push(line);
     this.historyPos = this.history.length;
+    // Commands for the page itself (the game doesn't see them; no turn passes).
+    const reply = this.pageCommand(line);
+    if(reply !== null) {
+      const p = document.createElement('p');
+      p.className = 'aside';
+      p.textContent = reply;
+      this.logEl.appendChild(p);
+      this.scrollToLatest();
+      if(this.typedAhead.length) this.send(this.typedAhead.shift()!);
+      else this.focusInput();
+      return;
+    }
     this.formEl.classList.add('busy');
     this.client.sendLine(line);
+  }
+
+  /**
+   * A command for the page rather than the game: PICTURES ON / OFF (also
+   * PICTURE, IMAGE(S), ILLUSTRATION(S); without ON or OFF it switches).
+   * Returns the reply, or null when the line is for the game.
+   */
+  private pageCommand(line: string): string | null {
+    const m = /^\s*(?:pictures?|images?|illustrations?)(?:\s+(on|off))?\s*[.!]?\s*$/i.exec(line);
+    if(!m) return null;
+    const on = m[1] ? m[1].toLowerCase() == 'on' : !this.picturesOn();
+    this.setSetting('pictures', on ? 'on' : 'off');
+    return on ? '(Pictures are on. Type PICTURES OFF to hide them.)'
+              : '(Pictures are off. Type PICTURES ON to show them again.)';
   }
 
   /** The game waits for a key ("more" or a keystroke). */

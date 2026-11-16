@@ -112,6 +112,13 @@ button {
   }
 }
 
+/* No picture (none for this location, or pictures turned off): the story takes the whole width. */
+.app.no-scene {
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "top" "story";
+}
+
 /* ==========================================================================
    Top bar: menu button, location, time
    ========================================================================== */
