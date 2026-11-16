@@ -18,6 +18,15 @@ lake: Floorless, OutdoorRoom 'Lake'
   down: NoTravelMessage { "That would take you under water! You could dive if you think that's a good idea. " }
   cannotGoThatWayMsg = 'It\'s best not to venture any further on the lake; you might lose sight of the shore. '
   bottomRoom = underLake
+  /* the inflated rubber boat floats (other things sink to the bottom) */
+  receiveDrop(obj, desc) {
+    if(obj == boat && boat.isInflated) {
+      obj.moveInto(self);
+      desc.standardReport(obj, self);
+    } else {
+      inherited(obj, desc);
+    }
+  }
   /* the rubber boat comes along from bay */
   travelerArriving(traveler, origin, connector, backConnector) {
     if(traveler == me && origin == bay && boat.location == bay) {

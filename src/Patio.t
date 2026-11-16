@@ -47,7 +47,17 @@ patio: OutdoorRoom 'Patio'
     "An inflatable yellow rubber boat. It is currently <<isInflated ? "inflated" : "not inflated so that you can easily carry it">>. ";
   }
   isInflated = nil
-  
+
+  /* on the lake (or the bay), you're sitting in the boat */
+  isOnWater = (location == lake || location == bay)
+
+  dobjFor(Take) {
+    verify() {
+      if(isOnWater) illogicalNow(&cannotTakeLocationMsg);
+      inherited();
+    }
+  }
+
   dobjFor(Inflate) {
     verify() {
       if(isInflated) illogicalAlready('The rubber boat is already inflated. ');
@@ -60,7 +70,8 @@ patio: OutdoorRoom 'Patio'
   
   dobjFor(Deflate) {
     verify() {
-      if(!isInflated) illogicalAlready('The rubber boat not inflated. ');
+      if(!isInflated) illogicalAlready('The rubber boat is not inflated. ');
+      if(isOnWater) illogicalNow('TODO: you can\'t deflate the boat while you\'re in it on the lake. ');
     }
     action() {
       "You let all the air out of the rubber boat. ";
