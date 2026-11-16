@@ -16,6 +16,7 @@ eastCellar: Room 'East wine cellar'
   is set at floor level in the east wall. "
   east = drainCellarToSewer
   in asExit(east)
+  roomImage = (panther.isIn(eastCellar) ? 'eastCellar-panther' : 'eastCellar')
   west: OneWayRoomConnector
   {
     -> westCellar
