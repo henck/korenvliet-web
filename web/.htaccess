@@ -1,7 +1,13 @@
 # Korenvliet on an Apache web server
 
-# The page when no file is given (https://example.com/)
+# The page when no file is given (https://example.com/). LiteSpeed servers
+# may ignore DirectoryIndex here (their own index setting wins), but follow
+# the rewrite rule.
 DirectoryIndex index.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^$ index.html [L]
+</IfModule>
 
 # File types Apache may not know: the game image and the pictures
 AddType application/octet-stream .t3
