@@ -334,12 +334,19 @@ export class ModernUI {
       // (Pictures may have different shapes.)
       if(img.naturalWidth && img.naturalHeight)
         document.documentElement.style.setProperty('--ratio', String(img.naturalWidth / img.naturalHeight));
-      picture.appendChild(img);
-      requestAnimationFrame(() => img.classList.add('shown'));
-      // Drop the old pictures once the new one has faded in.
-      setTimeout(() => {
+      // The new picture fades in over the old one, which is dropped once the
+      // new one covers it (unless a newer picture has come in the meantime).
+      const dropOld = () => {
+        if(this.image != src) return;
         picture.querySelectorAll('img').forEach((old) => { if(old !== img) old.remove(); });
-      }, 600);
+      };
+      img.addEventListener('transitionend', dropOld, { once: true });
+      picture.appendChild(img);
+      requestAnimationFrame(() => {
+        img.classList.add('shown');
+        // (No transition, e.g. with reduced motion: no transitionend either.)
+        if(!parseFloat(getComputedStyle(img).transitionDuration)) dropOld();
+      });
     };
     img.src = src;
   }
