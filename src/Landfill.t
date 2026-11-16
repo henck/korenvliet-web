@@ -21,6 +21,7 @@ landfill: OutdoorRoom 'Edge of a landfill'
   }
   west = path
   east: NoTravelMessage { "You would fall right into the landfill. "; }
+  roomImage = (airship.location == landfill ? 'landfill-balloon' : 'landfill')
 ;
 
 + Distant 'rocky path' 'path' 
