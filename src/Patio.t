@@ -71,7 +71,7 @@ patio: OutdoorRoom 'Patio'
   dobjFor(Deflate) {
     verify() {
       if(!isInflated) illogicalAlready('The rubber boat is not inflated. ');
-      if(isOnWater) illogicalNow('TODO: you can\'t deflate the boat while you\'re in it on the lake. ');
+      if(isOnWater) illogicalNow('Deflating the boat while you\'re in it is inadvisable. ');
     }
     action() {
       "You let all the air out of the rubber boat. ";
