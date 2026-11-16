@@ -55,6 +55,7 @@ DrainUp: Door
 sewerUnderLiving: Room 'Sewer'
   "You are inside the north end of a dimly lit, round concrete sewer pipe. The pipe continues to the south. There is a drain here, leading up. "
   up = drainToLiving
+  roomImage = 'sewerDrain'
   out asExit(up)
   south = sewerLeftCurve
 ;
@@ -66,6 +67,7 @@ sewerUnderLiving: Room 'Sewer'
 sewerUnderStudy: Room 'Sewer'
   "You are inside the north end of a dimly lit, round concrete sewer pipe. The pipe continues to the south. There is a drain here, leading up. "
   up = drainToStudy
+  roomImage = 'sewerDrain'
   out asExit(up)
   south = sewerFork
 ;
